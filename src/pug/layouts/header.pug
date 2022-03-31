@@ -1,0 +1,80 @@
++b.HEADER.header
+    .container
+        +e.inner
+            +e.cell._left
+                +e.logo.logo__
+                    +e.A(href="#").link
+                        +e.IMG(src="/app/img/logo.svg" alt="Логотип").image
+            +e.cell._right
+                +e.top.flex._justify._start
+                    +b.NAV.top-menu
+                        +e.UL.list
+                            +e.LI.item
+                                +e.A(href="#").link Каталог инструментов
+                            +e.LI.item
+                                +e.A(href="#").link Все для сада
+                            +e.LI.item
+                                +e.A(href="#").link Ручной инструмент
+                            +e.LI.item
+                                +e.A(href="#").link Электрика
+                            +e.LI.item
+                                +e.A(href="#").link Доставка
+                            +e.LI.item
+                                +e.A(href="#").link Оплата
+                            +e.LI.item
+                                +e.A(href="#").link О нас
+                    +b.login
+                        +e.A(href="#").link Вход
+                        +e.A(href="#").link Регистрация
+                +e.main.flex._justify._start
+                    +e.A(href="#").banner
+                        +b.IMG(src="/img/banner.jpg").object-fit
+                    +e.basket.basket__.flex._start
+                        +e.cell._left
+                            +e.A(href="#").link.link-icon._small
+                                +icon('cart')
+                                span 3 шт. / 17 250 р.
+                            +e.A(href="#").link.link-icon
+                                +icon('star')
+                                span Избранное (7)
+                            +e.A(href="#").link.link-icon
+                                +icon('balance')
+                                span К сравнению (5)
+                        +e.cell._right
+                            +e.A(href="#").product
+                                +b.IMG(src="/img/product-1.jpg" width="70" height="70").object-fit
+                            +e.A(href="#").product
+                                +b.IMG(src="/img/product-2.jpg" width="70" height="70").object-fit
+                            +e.A(href="#").product
+                                +b.IMG(src="/img/product-3.jpg" width="70" height="70").object-fit
+                    +e.contacts.contacts__
+                        +e.top.flex._justify
+                            +e.STRONG.text Время работы:
+                            +e.SPAN.time 10:00 — 19:00
+                        +e.center
+                            +e.A(href="tel:84957212525").phone 8 495 721-25-25
+                        +e.bottom.flex._justify
+                            +e.SPAN.address Москва
+                            +e.A(href="#").location.location-icon__
+                                +icon('triangle')
+                                +e.SPAN.text сменить
+        +e.menu.menu__
+            +e.serach.search__
+                +e.A(href="#").button
+                    +icon('search')
+            +e.UL.list.flex._center
+                +e.LI.item.is-active
+                    +e.A(href="#").link Перфораторы
+                +e.LI.item
+                    +e.A(href="#").link Дрели
+                +e.LI.item
+                    +e.A(href="#").link Шлифмашины
+                +e.LI.item
+                    +e.A(href="#").link Пистолеты
+                +e.LI.item
+                    +e.A(href="#").link Электропилы
+                +e.LI.item
+                    +e.A(href="#").link Наборы инструментов
+                +e.LI.item
+                    +e.A(href="#").link Акксесуары
+            +e(href='#').button Распродажа

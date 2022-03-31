@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1">
+    <title>Main page</title>
+    <link rel="stylesheet" href="app/css/app.css?v=1648738079898">
+    <script>
+        function canUseWebP(){var e=document.createElement("canvas");return!(!e.getContext||!e.getContext("2d"))&&0==e.toDataURL("image/webp").indexOf("data:image/webp")}var root=document.getElementsByTagName("html")[0];canUseWebP()?root.classList.add("ws"):root.classList.add("wn");
+    </script>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <div class="header__cell header__cell_left">
+                    <div class="header__logo logo">
+                        <a class="logo__link" href="#">
+                            <img class="logo__image" src="/app/img/logo.svg" alt="Логотип" title="" />
+                        </a>
+                    </div>
+                </div>
+                <div class="header__cell header__cell_right">
+                    <div class="header__top flex flex_justify flex_start">
+                        <nav class="top-menu">
+                            <ul class="top-menu__list">
+                                <li class="top-menu__item"><a class="top-menu__link" href="#">Каталог инструментов</a>
+                                </li>
+                                <li class="top-menu__item"><a class="top-menu__link" href="#">Все для&nbsp;сада</a>
+                                </li>
+                                <li class="top-menu__item"><a class="top-menu__link" href="#">Ручной инструмент</a>
+                                </li>
+                                <li class="top-menu__item"><a class="top-menu__link" href="#">Электрика</a>
+                                </li>
+                                <li class="top-menu__item"><a class="top-menu__link" href="#">Доставка</a>
+                                </li>
+                                <li class="top-menu__item"><a class="top-menu__link" href="#">Оплата</a>
+                                </li>
+                                <li class="top-menu__item"><a class="top-menu__link" href="#">О нас</a>
+                                </li>
+                            </ul>
+                        </nav>
+                        <div class="login"><a class="login__link" href="#">Вход</a><a class="login__link" href="#">Регистрация</a>
+                        </div>
+                    </div>
+                    <div class="header__main flex flex_justify flex_start">
+                        <a class="header__banner" href="#">
+                            <picture>
+                                <source type="image/webp" srcset="app/img/banner.webp">
+                                    <img src="app/img/banner.jpg" class="object-fit" alt="" role="presentation" />
+                            </picture>
+                        </a>
+                        <div class="header__basket basket flex flex_start">
+                            <div class="basket__cell basket__cell_left">
+                                <a class="basket__link link-icon link-icon_small" href="#">
+                                    <svg class="icon icon-cart" viewBox="0 0 19 18">
+                                        <use xlink:href="/app/icons/sprite.svg#cart"></use>
+                                    </svg><span>3 шт. / 17 250 р.</span>
+                                </a>
+                                <a class="basket__link link-icon" href="#">
+                                    <svg class="icon icon-star" viewBox="0 0 14 14">
+                                        <use xlink:href="/app/icons/sprite.svg#star"></use>
+                                    </svg><span>Избранное (7)</span>
+                                </a>
+                                <a class="basket__link link-icon" href="#">
+                                    <svg class="icon icon-balance" viewBox="0 0 18 16">
+                                        <use xlink:href="/app/icons/sprite.svg#balance"></use>
+                                    </svg><span>К сравнению (5)</span>
+                                </a>
+                            </div>
+                            <div class="basket__cell basket__cell_right">
+                                <a class="basket__product" href="#">
+                                    <picture>
+                                        <source type="image/webp" srcset="app/img/product-1.webp">
+                                            <img src="app/img/product-1.jpg" class="object-fit" width="70" height="70" alt="" role="presentation" />
+                                    </picture>
+                                </a>
+                                <a class="basket__product" href="#">
+                                    <picture>
+                                        <source type="image/webp" srcset="app/img/product-2.webp">
+                                            <img src="app/img/product-2.jpg" class="object-fit" width="70" height="70" alt="" role="presentation" />
+                                    </picture>
+                                </a>
+                                <a class="basket__product" href="#">
+                                    <picture>
+                                        <source type="image/webp" srcset="app/img/product-3.webp">
+                                            <img src="app/img/product-3.jpg" class="object-fit" width="70" height="70" alt="" role="presentation" />
+                                    </picture>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="header__contacts contacts">
+                            <div class="contacts__top flex flex_justify"><strong class="contacts__text">Время работы:</strong><span class="contacts__time">10:00 — 19:00</span>
+                            </div>
+                            <div class="contacts__center"><a class="contacts__phone" href="tel:84957212525">8 495 721-25-25</a>
+                            </div>
+                            <div class="contacts__bottom flex flex_justify"><span class="contacts__address">Москва</span>
+                                <a class="contacts__location location-icon" href="#">
+                                    <svg class="icon icon-triangle" viewBox="0 0 7 7">
+                                        <use xlink:href="/app/icons/sprite.svg#triangle"></use>
+                                    </svg><span class="location-icon__text">сменить</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="header__menu menu">
+                <div class="menu__serach search">
+                    <a class="search__button" href="#">
+                        <svg class="icon icon-search" viewBox="0 0 24 24">
+                            <use xlink:href="/app/icons/sprite.svg#search"></use>
+                        </svg>
+                    </a>
+                </div>
+                <ul class="menu__list flex flex_center">
+                    <li class="menu__item is-active"><a class="menu__link" href="#">Перфораторы</a>
+                    </li>
+                    <li class="menu__item"><a class="menu__link" href="#">Дрели</a>
+                    </li>
+                    <li class="menu__item"><a class="menu__link" href="#">Шлифмашины</a>
+                    </li>
+                    <li class="menu__item"><a class="menu__link" href="#">Пистолеты</a>
+                    </li>
+                    <li class="menu__item"><a class="menu__link" href="#">Электропилы</a>
+                    </li>
+                    <li class="menu__item"><a class="menu__link" href="#">Наборы инструментов</a>
+                    </li>
+                    <li class="menu__item"><a class="menu__link" href="#">Акксесуары</a>
+                    </li>
+                </ul><a class="menu__button" href="#">Распродажа</a>
+            </div>
+        </div>
+    </header>
+    <footer class="footer"></footer>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="app/js/app.js?v=1648738079904"></script>
+</body>
+
+</html>

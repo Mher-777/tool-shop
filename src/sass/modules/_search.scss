@@ -1,0 +1,11 @@
+.search {
+  &__button {
+    background-color: var(--color-accent);
+    display: inline-block;
+    padding: .5rem;
+    .icon {
+      width: 2.4rem;
+      height: 2.4rem;
+    }
+  }
+}

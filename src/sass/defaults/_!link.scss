@@ -1,0 +1,47 @@
+.link-icon {
+  display: flex;
+  align-items: center;
+  max-width: fit-content;
+  &_small {
+    font-size: 1.4rem;
+  }
+  .icon {
+    max-width: 2rem;
+    flex-shrink: 0;
+    margin-right: .8rem;
+    fill: var(--color-black)
+  }
+  span {
+    display: block;
+    max-width: 13rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    text-decoration-line: underline;
+    text-decoration-skip-ink: none;
+  }
+  &:hover {
+    span {
+      text-decoration: none;
+    }
+  }
+}
+
+.location-icon {
+  display: inline-flex;
+  align-items: center;
+  .icon {
+    width: .7rem;
+    height: .7rem;
+    flex-shrink: 0;
+    margin-right: .4rem;
+  }
+  &__text {
+    border-bottom: 1px dashed var(--color-base);
+  }
+  &:hover {
+    .location-icon__text {
+      border-color: transparent;
+    }
+  }
+}

@@ -1,0 +1,23 @@
+.top-menu {
+  &__list {
+    display: flex;
+  }
+  &__link {
+    transition: all ease-in-out .2s;
+  }
+  &__item {
+    border-bottom: 1px solid transparent;
+    color: var(--color-base);
+    transition: all ease-in-out .2s;
+    max-width: 20rem;
+    &:hover {
+      border-color: var(--color-accent);
+      & > a {
+        color: var(--color-accent);
+      }
+    }
+    &:not(:last-child) {
+      margin-right: 2.5rem;
+    }
+  }
+}

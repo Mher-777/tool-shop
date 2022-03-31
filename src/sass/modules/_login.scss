@@ -1,0 +1,24 @@
+.login {
+  display: flex;
+  align-items: center;
+  &__link {
+    transition: all ease-in-out .2s;
+    border-bottom: 1px solid transparent;
+    &:hover {
+      border-color: var(--color-accent);
+      color: var(--color-accent);
+    }
+    &:not(:first-child) {
+      margin-left: 2.8rem;
+      position: relative;
+      &::before {
+        content: '';
+        position: absolute;
+        height: 100%;
+        width: 1px;
+        left: -1.4rem;
+        background-color: var(--color-base);
+      }
+    }
+  }
+}

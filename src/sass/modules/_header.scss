@@ -1,0 +1,31 @@
+.header {
+  padding-top: 2rem;
+  &__inner {
+    display: flex;
+  }
+  &__main {
+    & > * {
+      flex: 1 1 auto;
+    }
+  }
+  &__cell {
+    flex: 1 1 auto;
+    &_left {
+      margin-right: 3rem;
+      max-width: 21rem;
+    }
+  }
+  &__top {
+    padding-bottom: .8rem;
+    margin-bottom: 1rem;
+    border-bottom: 1px solid #D7D7D7;
+  }
+  &__banner {
+    max-width: 25rem;
+    position: relative;
+    padding-top: 70 / 930 * 100%;
+  }
+  &__basket {
+    max-width: 41rem;
+  }
+}

@@ -1,0 +1,49 @@
+.menu {
+  margin-top: 2.5rem;
+  box-shadow: 0 .2rem .3rem rgba(0, 0, 0, 0.25);
+  border-radius: 1rem;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.4rem;
+  &__list {
+    background-color: var(--color-base);
+    flex: 1 1 auto;
+  }
+  &__item {
+    color: var(--color-white);
+    font-weight: 500;
+    transition: all ease-in-out .2s;
+    &.is-active {
+      background-color: var(--color-accent);
+      color: var(--color-black);
+    }
+    &:hover {
+      &:not(.is-active) {
+        background-color: var(--color-accent);
+        a {
+          color: var(--color-black);
+        }
+      }
+    }
+  }
+  &__link {
+    padding: .8rem 2rem;
+    display: inline-block;
+    transition: all ease-in-out .2s;
+  }
+  &__button {
+    text-transform: uppercase;
+    background-color: var(--color-accent);
+    padding: .8rem 1.5rem;
+    font-weight: 700;
+    transition: all ease-in-out .2s;
+    &:hover {
+      background-color: var(--color-white);
+      color: var(--color-accent);
+    }
+  }
+  &__search {
+    flex-shrink: 0;
+  }
+}
